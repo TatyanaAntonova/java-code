@@ -1,5 +1,5 @@
 /*
- 2. Write a method.
+3.2. Write a method.
 Incoming parameter: a sorted array of int type that contains negative and positive values.
 Return a sorted array that consists of the squares of the values.
 Do not use the standard sort method.
