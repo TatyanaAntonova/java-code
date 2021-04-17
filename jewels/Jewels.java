@@ -1,12 +1,12 @@
-/* 1. Написать метод numJewelsInStones который принимает 2 параметра:
-- String jewels: строка, каждый символ который символизирует драгоценный камень, символы уникальны
-- String stones: строка, каждый символ который символизирует камень.
-Строки могут состоять только из символов a..zA..Z
-Метод должне вернуть количество другоценных камней в строке stones.
-Пример:
+/* 1.Write a method numJewelsInStones with 2 parameters:
+- String jewels: a string, each character of which symbolizes a gem, the characters are unique,
+- String stones: a string, each character of which symbolizes a gem.
+Strings can only consist of characters a..zA..Z
+The method should return the number of other gems in the string stones.
+Example:
 jewels = "aAb" stones = "caсAcA"
 Output: 3
-Explanation: в строке stones есть 3 драг. камня: a,A,A */
+Explanation: there are 3 gems in string stones: a,A,A */
 package homeTask1;
 
 import java.util.ArrayList;
