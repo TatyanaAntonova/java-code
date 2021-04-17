@@ -1,5 +1,12 @@
-package homeTask2;
-
+/*
+ 2. Write a method.
+Incoming parameter: a sorted array of int type that contains negative and positive values.
+Return a sorted array that consists of the squares of the values.
+Do not use the standard sort method.
+Example:
+Input: [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+*/
 public class SquareOfArrayValues {
     private int[] array;
 
@@ -41,7 +48,6 @@ public class SquareOfArrayValues {
         }
         return array;
     }
-
     public int[] getSquareOfArrayValues(int[] array) {
         if (!checkPositiveAndNegativeNumbers(array)) {
             System.out.println("Write sorted array with negative and positive numbers, please!");
