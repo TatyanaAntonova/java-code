@@ -1,11 +1,10 @@
-/*3*. Дана строка, состоящая из любых символов.
-Не используя стандартный метод String.toLowerCase() перевести все большие латинские буквы в маленькие.
-Пример:
+/*
+3.3. There is a string, which consists of any characters.
+Without using the standard String.toLowerCase () method, convert all uppercase Latin letters to lowercase.
+Example:
 Input: "#1AmC"
 Output: "#1amc"
 */
-package homeTask3;
-
 public class ToLowerCase {
 
     public String outputLowerCase(String input) {
