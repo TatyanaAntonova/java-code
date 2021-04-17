@@ -72,7 +72,6 @@ public class Jewels {
         return true;
     }
 
-
     public int numJewelsInStones(String jewels, String stones) {
         this.jewels = jewels;
         this.stones = stones;
