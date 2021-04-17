@@ -1,4 +1,4 @@
-/* 1.Write a method numJewelsInStones with 2 parameters:
+/* 3.1. Write a method numJewelsInStones with 2 parameters:
 - String jewels: a string, each character of which symbolizes a gem, the characters are unique,
 - String stones: a string, each character of which symbolizes a gem.
 Strings can only consist of characters a..zA..Z
@@ -7,8 +7,6 @@ Example:
 jewels = "aAb" stones = "caсAcA"
 Output: 3
 Explanation: there are 3 gems in string stones: a,A,A */
-package homeTask1;
-
 import java.util.ArrayList;
 
 public class Jewels {
