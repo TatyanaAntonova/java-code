@@ -42,7 +42,7 @@ public class Jewels {
         return array;
     }
 
-    private Character[] uniqueJewels(String jewels) {
+    private Character[] uniqueJewels() {
         char[] array = sortArray(stringToArray(jewels));
         ArrayList<Character> charList = new ArrayList<>();
 
@@ -61,11 +61,27 @@ public class Jewels {
         return newArray;
     }
 
+    private boolean checkSymbols(){
+        char[] charArray = jewels.toCharArray();
+        //ASCII DEC a-z - 97-122 & A-Z - 65-90
+        for (int i = 0; i < charArray.length; i++) {
+            if ((int) charArray[i] < 65 || (int) charArray[i] > 122 || ((int) charArray[i] > 90 && (int) charArray[i] < 97)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     public int numJewelsInStones(String jewels, String stones) {
         this.jewels = jewels;
         this.stones = stones;
 
-        Character[] uniqueJewelsArray = uniqueJewels(jewels);
+        if(!checkSymbols()){
+            return  count;
+        }
+
+        Character[] uniqueJewelsArray = uniqueJewels();
         char letterJewels, letterStone;
 
         for (int i = 0; i < uniqueJewelsArray.length; i++) {
