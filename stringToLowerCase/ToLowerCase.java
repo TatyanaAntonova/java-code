@@ -10,10 +10,10 @@ public class ToLowerCase {
     public String outputLowerCase(String input) {
         char[] charArray = input.toCharArray();
         int decAscii;
-
+        int diff = 'a' - 'A';
         for (int i = 0; i < charArray.length; i++) {
-            if ((int) charArray[i] >= 65 && (int) charArray[i] <= 90) {
-                decAscii = 32 + (int) charArray[i];
+            if ((int) charArray[i] >= 'A' && (int) charArray[i] <= 'Z') {
+                decAscii = diff + (int) charArray[i];
                 charArray[i] = (char) decAscii;
             }
         }
