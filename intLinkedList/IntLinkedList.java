@@ -71,23 +71,30 @@ public class IntLinkedList implements IntList, IntQueue, IntStack {
         }
     }
 
+    public void checkIndex(int index){
+        if(index < 0 || index > size - 1){
+            throw new IndexOutOfBoundsException();
+        }
+    }
+
     @Override
     public boolean remove(int index) {
+        checkIndex(index);
         Entry tmp = first;
         if (index == 0) {
             first = first.next;
-            size--;
+            first.previous = null;
         } else if (index == size - 1) {
             last = last.previous;
-            size--;
+            last.next = null;
         } else {
             for (int i = 0; i < index; i++) {
                 tmp = tmp.next;
             }
             tmp.previous.next = tmp.next;
             tmp.next.previous = tmp.previous;
-            size--;
         }
+        size--;
         return false;
     }
 
