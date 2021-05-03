@@ -1,11 +1,11 @@
-//Есть поле из клеток по средине которого находится робот. Робот умеет выполнять 4 команды: двигаться на 1 клетку в сторону: 
+//There is a robot in the middle of the field with cells.
+//The robot can execute 4 commands (move 1 square to the side): 
 //R (right), L (left), U (up), and D (down).
-//Задана строка из движений робота например "UUDLDR".
-//Написать метод который вернет true если робот вернется в ту же клетку с которой начал.
-//Input: "UD"
-//Output: true
-//Input: "LL"
-//Output: false
+//You have some String, for example "UUDLDR".
+//You have to write a method, which return true, if the robot will come back to the first cell. 
+//Example 
+//Input: "UD"  Output: true
+//Input: "LL"  Output: false
 
 import java.util.Scanner;
 
