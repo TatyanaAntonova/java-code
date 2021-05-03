@@ -1,5 +1,3 @@
-package homeTask1;
-
 import java.util.Arrays;
 
 public class RobotMoves {
