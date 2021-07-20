@@ -8,7 +8,7 @@ public class IntArrayList implements IntList {
 
     @Override
     public void add(int element) {
-        //если нужно добавить больше элементов, чем размер массива, то создаём новый массив
+        //create new array, if need more elements than array length
         if (size >= arr.length) {
             int newSize = arr.length * 3 / 2 + 1;
             int[] newArr = new int[newSize];
